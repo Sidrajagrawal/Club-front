@@ -1,0 +1,54 @@
+.timeline {
+    width: 100vw;
+    height: 5vh;
+    background-color: #EBEBEB;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    animation-play-state: running; /* Default state */
+}
+
+.scroll-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-right: 200px;
+}
+
+.timeline-date {
+    margin-right: 10px;
+    color: #06317D;
+    border-bottom: 2px solid #06317D;
+}
+
+.timeline-content {
+    color: #06317D;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-container:hover {
+    animation-play-state: paused;
+}

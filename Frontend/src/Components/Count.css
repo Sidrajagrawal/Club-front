@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    user-select: none;
+}
+.count{
+    width: 98vw;
+    height: 40vh;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #c0bfbf;
+    /* box-shadow: 1px 1px 10px lightslategray; */
+    border-radius: 15px;
+}
+.count>div:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+}
+.count-title{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:40px;
+    font-weight: 700;
+}
+.count-title>span:nth-of-type(1){
+    color: #315891;
+}
+
+.count-container>div{
+    border-right: 1px solid #315891;
+    padding-bottom:30px ;
+}
+.count-container>div>div:nth-of-type(1){
+    font-size: 45px;
+    font-weight: 800;
+    font-family: "Poppins", serif;
+    color: #315891;
+}
+.count-container>div>div:nth-of-type(2){
+    font-size: 22px;
+}
